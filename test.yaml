@@ -1,0 +1,4 @@
+- script: 'ThisIsNotDevBranch.exe test'
+  failOnStderr: true
+  displayName: 'Command Line Script'
+  condition: ne(variables['System.PullRequest.SourceBranch'], 'refs/heads/develop')
